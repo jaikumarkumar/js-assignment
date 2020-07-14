@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>        
+    function getday(){
+    var today = new Date();
+    var weekday = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+    var day_name = weekday[today.getDay()];
+    document.getElementById('day_name').innerHTML = 'Today is '+day_name;
+    var hours = today.getHours();
+    var AmOrPm;
+    if(hours>12){
+    AmOrPm='PM';
+    }
+    else{
+    AmOrPm='AM';
+    }
+    hours = (hours%12) || 12 ;
+    document.getElementById('current_time').innerHTML = 'current Time is ' + hours +':'+ today.getMinutes() + AmOrPm;
+    }
+    </script>
+</head>
+<body>
+    <button onclick="window.print()">Print Page</button>
+    <br>
+    <br>
+    <button name="getday" onclick="getday()" >Current Date & time</button>
+    <p id="day_name"></p>
+    <p id="current_time"></p>
+    <h5>Date Formats</h5>
+    <p id="Format1"></p>
+    <p id="Format2"></p>
+    <p id="Format3"></p>
+    <p id="Format4"></p>
+    
+    <script>
+        var date_format = new Date();
+        var dd = date_format.getDate();
+        var mm = date_format.getMonth();
+        var yy = date_format.getFullYear();
+
+        var Format1 = 'Format1 ' +mm+'-'+dd+'-'+yy;
+        var Format2 = 'Format1 ' +mm+'/'+dd+'/'+yy;
+        var Format3 = 'Format1 ' +dd+'-'+mm+'-'+yy;
+        var Format4 = 'Format1 ' +dd+'/'+mm+'/'+yy;
+        
+        document.getElementById('Format1').innerHTML=Format1;
+        document.getElementById('Format2').innerHTML=Format2;
+        document.getElementById('Format3').innerHTML=Format3;
+        document.getElementById('Format4').innerHTML=Format4;
+    </script>
+</body>
+</html>
