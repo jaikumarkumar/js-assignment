@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+//Data types : 7 Types
+
+document.write('Numbers',[ 5, 6.5, 7]);
+document.write('String','Hello world');
+document.write('Boolean',true);
+document.write('Null',null);
+document.write('Undefiend',undefined);
+document.write('Array',[ 5, 6.5, 7]);
+document.write('objects',{a:1,b:2,c:3});
+
+//Declare VARiable
+var name;
+//Declare multiple VARiable
+var age,place,group;
+//Assign value
+name = "Rajesh";
+
+// let variable
+let x; // undefined
+let name = 'Mukul';
+// can also declare multiple vlaues
+let a=1,b=2,c=3;
+// assignment
+let a = 3;
+a = 4; // works same as var.
+
+
+//Various methods in Console
+//1.
+console.log('Hello World',1,null,undefined,true,[1,2,3],{a:1,b:2,c:3});
+//2.
+console.error('this is simple error');
+//3.
+console.warn('This is warning');
+//4.The amount of time spend by a block or function
+console.time('abc');
+console.timeEnd('abc');
+//5.generate a table inside a console
+console.table({a:1,b:2,c:3});
+
+//6.count method
+for(let i=0;i<5;i++){
+    console.count(i);
+}
+//7.console group
+console.group('simple'); 
+  console.warn('warning!'); 
+  console.error('error here'); 
+  console.log('vivi vini vici'); 
+console.groupEnd('simple'); 
+console.log('new section'); 
+//8.
+console.clear();
+
+</script>
+</head>
+<body>
+</body>
+</html>
