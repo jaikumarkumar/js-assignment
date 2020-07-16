@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    //Question 1
+    let a = prompt("whats your name?");
+    let b = prompt("whats your age?");
+    let c = prompt("where you from?");
+
+    document.write(`My Name : ${a} ; My age is : ${b} ; Iam from : ${c}   `);
+    // question 2
+
+    //String Functions
+    var myString = 'jaikumar';
+    console.log(myString.charAt(7));
+
+    var message="My"
+    var final=message.concat("Name is ","jaikumar");
+
+    var intRegex = /[0-9 -()+]+$/;  
+    var myNumber = '123';
+    var myInt = myNumber.match(intRegex);
+    console.log(myInt);
+
+    var myString = '999 JavaScript Coders';
+    console.log(myString.replace(/JavaScript/i, "jQuery"));
+
+    var text="excellent"
+    text.slice(0,4);
+
+    var message="Welcome to js"
+    var word=message.split("l");
+
+    var text="excellent"
+    text.substring(0,4);
+    text.substring(2,4);
+
+    //Array Functions
+    var number_arr = [ 10, 20, 30, 40, 50 ]; 
+    var string_arr = [ "Apple", "Banana", "C", "d" ]; 
+    number_arr.push(60);
+    console.log(number_arr);
+
+    number_arr.unshift(10, 20);  
+    console.log(number_arr);
+
+    number_arr.splice(1, 3);
+    
+    //Question 3
+    let age = confirm("Are you 21+ ?");
+    if(age == true){
+        document.write('Can Drink') ;
+    }
+    else{
+        document.write('cant Drink');
+    }
+</script>
+</head>
+</html>
