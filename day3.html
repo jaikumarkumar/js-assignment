@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+    console.log('Hello World');     
+    let num = prompt("Enter the number ?");
+
+    console.log(num); 
+        
+    if(num%2 == 1)
+    {
+        document.write(` The number entered is ${num} and Number is odd `);
+    }
+    else
+    {
+        document.write(`The number entered is ${num} and Number is Even`);
+    }
+    
+    let os = prompt("Enter your OS Name ?");
+
+    let values = os.split(" ");
+    //  console.log(values[0]);
+    //  console.log(values[1]);
+    document.write(` The OS name is ${values[0]} and version is ${values[1]}`);
+
+    //Grade
+    let mark = prompt("Enter your Mark ?");
+    
+    console.log(mark);
+
+    switch(mark){
+        case mark>75:alert(`Marks are ${mark} and grade is A`)
+        break;
+        case mark<75 && mark>=50:alert(`Marks are ${mark} and grade is B`)
+        break;
+        case mark<50 && mark>=35:alert(`Marks are ${mark} and grade is c`)
+        break;
+    }
+
+    </script>
+
+    </head>
+    <body>
+    <p></p>
+    </body>
+</html>
