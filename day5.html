@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let num = window.prompt("Enter one number between 10 to 25 !");
+            console.log(num);
+
+            let arr = new Array();
+            if(num>0){
+                for(let x =1 ;x<num;x++){
+                    arr.push(x);
+                }
+
+               //console.log(arr);
+               
+               let odd = arr.filter(el=>el%2==1);
+               console.log(odd);
+            }
+            else{
+                alert("enter positive number");
+            }
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>
