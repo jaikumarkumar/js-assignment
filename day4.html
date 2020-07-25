@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            //Question 1
+            for(let x=1;x<=100;x++){
+                if(x%3==0 && x%5 != 0){
+                    document.write(`fizz`);
+                }
+                else if(x%5==0 && x%3 != 0)
+                {
+                    document.write(`buzz`);
+                }
+                else if(x%3==0 && x%5==0)
+                {
+                    document.write(`fizzbuzz`);
+                }
+                else{
+                    document.write(x);
+                }
+               
+            }
+            document.write("\n");
+            //Question 2
+            const student = {
+                name : "Helen",
+                age : 24,
+                projects : {
+                    dicegame:"two players"
+                }
+            }
+            
+            document.write(student.name,"\n");
+            document.write(student.age);
+            document.write(student.projects.dicegame);
+        //Question 3
+            document.write("\n");
+            let list = new Array('Apple','Banana','Chocolate','Drumstick','Egg');
+            list.forEach(el=>document.write(el));
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>
